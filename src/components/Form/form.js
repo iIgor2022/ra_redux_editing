@@ -30,10 +30,10 @@ function From(props) {
           const { index } = form.editingMode;
 
           onChangesSubmit(index, name, price);
-          onReset();
         } else {
           onServiceSubmit(name, price);
         }
+        onReset();
       }}
       onReset={ev => {
         ev.preventDefault();
